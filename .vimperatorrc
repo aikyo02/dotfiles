@@ -1,0 +1,40 @@
+"============================
+" General
+"============================
+
+" 入力欄に自動フォーカスしない
+set focuscontent
+" Hintモードでアルファベット使用
+set hintchars=arstdhneiowpluy
+" commandモードでIMEオフ
+style! -name=commandline-ime chrome://* #liberator-commandline-command input {ime-mode: inactive;}
+
+"=============================================
+" Key Config
+"=============================================
+map u <C-u>
+map e <C-d>
+noremap <C-n> n
+map n gT
+map i gt
+map t <C-i>
+map r <C-o>
+map s :open<Space>google<Space>
+map S :tabopen<Space>google<Space>
+"map s :tabopen<Space>google<Space>
+"map S :open<Space>google<Space>
+
+map O :tabopen<Space>
+map <M-c> <C-v><M-c>
+
+
+map ,s :so ~/.vimperatorrc<CR>
+
+
+"============================
+" colorscheme
+"============================
+" デフォルトのヒント派手すぎ＞＜
+hi Hint font-family: Arial; font-size: 21px; font-weight: bold; text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black; color: #33cccc;
+hi HintElem color: gray; background-color: #a1e4e6;
+hi HintActive color: black; background-color: #ff8700;

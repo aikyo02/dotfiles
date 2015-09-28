@@ -1,0 +1,50 @@
+[user]
+	name = aikyo
+	email = aikyo02@gmail.com
+[alias]
+	alias = !"if test -z $1; then loop=; for k in `git config --get-regexp ^alias\\. | sort | sed -e 's/^alias\\.\\(\\S*\\).*/\\1/g'`; do echo -n $k; loop="${loop}1"; if test ${#loop} -lt 5; then echo -n '\t'; else echo; loop=; fi; done; exit; fi; git config --list | grep ^alias\\.$1= | sed -e s/^alias\\.//; exit;"
+	ap = add -p
+	br = branch
+	brd = branch -d
+	co = checkout
+	cob = checkout -b
+	com = checkout master
+	ci = commit
+	cl = clone
+	f = fetch
+	d = diff
+	dc = diff --cached
+	l = log
+	lp = log -p
+	ls = log --stat
+	lfs = log --pretty=format:%s
+	lfhas = log --pretty=format:\"%h / %an / %s\"
+	lrfh = log --reverse --pretty=format:%h
+	lrfhas = log --reverse --pretty=format:\"%h / %an / %s\"
+	m = merge
+	rb = rebase
+	rl = reflog
+	rss = reset --soft
+	rsm = reset --mixed
+	rsh = reset --hard
+	s = show
+	sa = stash apply
+	sl = stash list
+	sp = stash pop
+	ss = stash save
+	st = status
+
+[core]
+	excludesfile = ~/.gitignore
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = auto
+[init]
+	templatedir = ~/.git_template
+[credential]
+	helper = osxkeychain
