@@ -140,7 +140,6 @@
       <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::EXTRA3, KeyCode::TAB</autogen>
       <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::EXTRA3, KeyCode::ESCAPE</autogen>
       <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::EXTRA3, KeyCode::SEMICOLON</autogen>
-      <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::EXTRA3, KeyCode::SEMICOLON</autogen>
       <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::EXTRA3, KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::EXTRA3, KeyCode::TAB, ModifierFlag::CONTROL_L</autogen>
 
@@ -262,6 +261,11 @@
       KeyCode::V, ModifierFlag::EXTRA2,
       KeyCode::I, ModifierFlag::CONTROL_L,
       KeyCode::T, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>__KeyToKey__
+      KeyCode::I, ModifierFlag::EXTRA3,
+      KeyCode::P, ModifierFlag::CONTROL_L,
+      KeyCode::P, ModifierFlag::CONTROL_L
     </autogen>
   </item>
 
