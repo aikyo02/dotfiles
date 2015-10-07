@@ -227,7 +227,8 @@
     </autogen>
     <autogen>__KeyToKey__
       KeyCode::E, ModifierFlag::EXTRA2,
-      KeyCode::E, ModifierFlag::COMMAND_L
+      KeyCode::D, ModifierFlag::COMMAND_L,
+      KeyCode::F, ModifierFlag::COMMAND_L
     </autogen>
     <autogen>__KeyToKey__
       KeyCode::D, ModifierFlag::EXTRA2,
