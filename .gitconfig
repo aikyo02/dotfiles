@@ -31,14 +31,24 @@
 	sa = stash apply
 	sl = stash list
 	sp = stash pop
-	ss = stash save
+  sp0 = stash pop stash@{0}
+  sp1 = stash pop stash@{1}
+  sp2 = stash pop stash@{2}
+  sp3 = stash pop stash@{3}
+  sp4 = stash pop stash@{4}
+  sp5 = stash pop stash@{5}
+  sp6 = stash pop stash@{6}
+  sp7 = stash pop stash@{7}
+  sp8 = stash pop stash@{8}
+  sp9 = stash pop stash@{9}
+	ss = stash save -u
 	st = status
 
 [core]
 	excludesfile = ~/.gitignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
