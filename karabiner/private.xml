@@ -267,6 +267,16 @@
       KeyCode::P, ModifierFlag::CONTROL_L,
       KeyCode::P, ModifierFlag::CONTROL_L
     </autogen>
+    <autogen>__KeyToKey__
+      KeyCode::U, ModifierFlag::EXTRA3,
+      KeyCode::I, ModifierFlag::CONTROL_L,
+      KeyCode::R, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>__KeyToKey__
+      KeyCode::O, ModifierFlag::EXTRA3,
+      KeyCode::I, ModifierFlag::CONTROL_L,
+      KeyCode::T, ModifierFlag::CONTROL_L
+    </autogen>
   </item>
 
   <item>
