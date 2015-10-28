@@ -16,6 +16,8 @@
 	dc = diff --cached
 	l = log
 	lp = log -p
+  lpl = log -p -1
+  lplc = log -p -1 -- .
 	ls = log --stat
 	lfs = log --pretty=format:%s
 	lfhas = log --pretty=format:\"%h / %an / %s\"
