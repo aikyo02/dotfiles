@@ -11,9 +11,9 @@
 	com = checkout master
 	ci = commit
 	cl = clone
-	f = fetch
 	d = diff
 	dc = diff --cached
+  f = fetch
 	l = log
 	lp = log -p
   lpl = log -p -1
