@@ -40,8 +40,6 @@
       <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::EXTRA1, KeyCode::V, ModifierFlag::CONTROL_L</autogen>
       <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::EXTRA1, KeyCode::RETURN</autogen>
       <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::EXTRA1, KeyCode::KEY_3, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::EXTRA1, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::EXTRA1, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
       <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::EXTRA1, KeyCode::KEY_1</autogen>
       <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::EXTRA1, KeyCode::KEY_2</autogen>
       <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::EXTRA1, KeyCode::KEY_3</autogen>
@@ -276,6 +274,16 @@
       KeyCode::O, ModifierFlag::EXTRA3,
       KeyCode::I, ModifierFlag::CONTROL_L,
       KeyCode::T, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>__KeyToKey__
+      <!-- 折りたたみ -->
+      KeyCode::BRACKET_RIGHT, ModifierFlag::EXTRA1,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>__KeyToKey__
+      <!-- 折りたたみ展開 -->
+      KeyCode::BACKSLASH, ModifierFlag::EXTRA1,
+      KeyCode::BACKSLASH, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
     </autogen>
   </item>
 
