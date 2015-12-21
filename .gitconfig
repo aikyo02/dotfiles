@@ -6,6 +6,7 @@
 	ap = add -p
 	br = branch
 	brd = branch -d
+  cp = cherry-pick
 	co = checkout
 	cob = checkout -b
 	com = checkout master
@@ -25,6 +26,7 @@
 	lrfhas = log --reverse --pretty=format:\"%h / %an / %s\"
 	m = merge
 	rb = rebase
+  rbi = rebase -i --autosquash
 	rl = reflog
 	rss = reset --soft
 	rsm = reset --mixed
