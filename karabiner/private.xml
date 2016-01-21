@@ -247,6 +247,20 @@
       KeyCode::I, ModifierFlag::CONTROL_L,
       KeyCode::T, ModifierFlag::CONTROL_L
     </autogen>
+    <autogen>
+      <!-- 単語選択して貼り付け -->
+      __KeyToKey__
+      KeyCode::V, ModifierFlag::EXTRA3,
+      KeyCode::D, ModifierFlag::COMMAND_L,
+      KeyCode::V, ModifierFlag::CONTROL_L,
+    </autogen>
+    <autogen>
+      <!-- 単語選択してコピー -->
+      __KeyToKey__
+      KeyCode::C, ModifierFlag::EXTRA3,
+      KeyCode::D, ModifierFlag::COMMAND_L,
+      KeyCode::C, ModifierFlag::COMMAND_L,
+    </autogen>
     <autogen>__KeyToKey__
       KeyCode::I, ModifierFlag::EXTRA3,
       KeyCode::P, ModifierFlag::CONTROL_L,
