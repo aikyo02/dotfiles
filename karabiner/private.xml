@@ -119,25 +119,6 @@
                KeyCode::FORWARD_DELETE, KeyCode::FORWARD_DELETE, KeyCode::FORWARD_DELETE, KeyCode::FORWARD_DELETE, KeyCode::FORWARD_DELETE,
                KeyCode::FORWARD_DELETE, KeyCode::FORWARD_DELETE, KeyCode::FORWARD_DELETE, KeyCode::FORWARD_DELETE, KeyCode::FORWARD_DELETE
       </autogen>
-      <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::EXTRA3,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-      </autogen>
-      <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::EXTRA3,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L,
-                            KeyCode::L, ModifierFlag::COMMAND_L
-      </autogen>
       <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA3, KeyCode::RETURN</autogen>
       <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::EXTRA3, KeyCode::TAB</autogen>
       <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::EXTRA3, KeyCode::ESCAPE</autogen>
