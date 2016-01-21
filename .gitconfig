@@ -24,6 +24,8 @@
 	lfhas = log --pretty=format:\"%h / %an / %s\"
 	lrfh = log --reverse --pretty=format:%h
 	lrfhas = log --reverse --pretty=format:\"%h / %an / %s\"
+  lrfhad = log --reverse --pretty=format:\"%H / %an / %ad\"
+  lrfhads = log --reverse --pretty=format:\"%H / %an / %ad / %s\"
 	m = merge
 	rb = rebase
   rbi = rebase -i --autosquash
