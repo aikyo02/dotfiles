@@ -184,7 +184,8 @@
     <autogen>
       __KeyToKey__
       KeyCode::W, ModifierFlag::CONTROL_L,
-      KeyCode::D, ModifierFlag::COMMAND_L
+      KeyCode::D, ModifierFlag::COMMAND_L,
+      KeyCode::C, ModifierFlag::COMMAND_L
     </autogen>
     <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA2, KeyCode::P, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
     <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA2,
@@ -212,7 +213,8 @@
     <autogen>
       __KeyToKey__
       KeyCode::W, ModifierFlag::CONTROL_L,
-      KeyCode::D, ModifierFlag::COMMAND_L
+      KeyCode::D, ModifierFlag::COMMAND_L,
+      KeyCode::C, ModifierFlag::COMMAND_L,
     </autogen>
 
     <autogen>__KeyToKey__
