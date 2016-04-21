@@ -23,6 +23,12 @@ alias tmo='git merge origin/`git rev-parse --abbrev-ref HEAD`'
 # pecoでブランチを取得する
 alias -g b='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
 
+# 特定のcommitが含まれるPRを探す find pull request. usage: fpr commit_hash [branch]
+function fpr() {
+  local parent=$2||'master'
+  git log $1..$2 --merges --ancestry-path --reverse --oneline | head -n1
+}
+
 # 自分用のコマンド
 export PATH=$PATH:~/bin
 
