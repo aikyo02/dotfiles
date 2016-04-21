@@ -122,6 +122,11 @@ fi
 
 
 # peco
+# bottom-up にしておくと目線の移動が少ない
+function peco {
+  command peco --layout=bottom-up $argv
+}
+
 function peco-execute-history() {
   local item
   item=$(builtin history -n -r 1 | peco)
