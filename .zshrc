@@ -1,6 +1,7 @@
 alias be='bundle exec'
 alias bi='bundle install'
 alias c='git checkout `git branch | peco | sed -e "s/\* //g" | awk "{print \$1}"`'
+alias cb='git rev-parse --abbrev-ref HEAD | tr -d "\n" | pbcopy'
 alias co='git checkout'
 alias cl='clear'
 alias g='ctags -R -f ./.tags'
@@ -8,17 +9,18 @@ alias h='git lfhas | head'
 alias l='less'
 alias la='ls -a'
 alias ll='ls -l'
+alias mo='git fetch && git merge origin/`git rev-parse --abbrev-ref HEAD`'
 alias p='peco'
 alias pong='perl -nle '\''print "display notification \"$_\" with title \"Terminal\""'\'' | osascript'
 alias r='ruby'
 alias rs='rustc'
+alias rso='git fetch && git reset --hard origin/`git rev-parse --abbrev-ref HEAD`'
 alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias sl='ls'
-alias t='git'
+alias t='hub'
 alias ta='tig --all'
 alias tbr='git browse-remote'
 alias ter='terminal-notifier'
-alias tmo='git merge origin/`git rev-parse --abbrev-ref HEAD`'
 
 # pecoでブランチを取得する
 alias -g b='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
@@ -26,7 +28,13 @@ alias -g b='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
 # 特定のcommitが含まれるPRを探す find pull request. usage: fpr commit_hash [branch]
 function fpr() {
   local parent=$2||'master'
-  git log $1..$2 --merges --ancestry-path --reverse --oneline | head -n1
+  git log $1..$2 --merges --ancestry-path --reverse --oneline | head
+}
+
+function find-pr-open() {
+  local pr="$(fpr $1 $2 | awk '{print substr($5, 2)}')"
+  local repo="$(git config --get remote.origin.url | sed 's/git@github.com://' | sed 's/\.git$//')"
+  open "https://github.com/${repo}/pull/${pr}"
 }
 
 # 自分用のコマンド
@@ -120,6 +128,11 @@ if which pyenv > /dev/null; then
   eval "$(pyenv init -)";
 fi
 
+# cd で移動した後に ls してほしい
+function cd {
+  builtin cd $argv
+  ls
+}
 
 # peco
 # bottom-up にしておくと目線の移動が少ない
