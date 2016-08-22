@@ -514,6 +514,11 @@
       KeyCode::BACKSLASH, ModifierFlag::EXTRA1,
       KeyCode::BACKSLASH, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
     </autogen>
+    <autogen>__KeyToKey__
+      <!-- Atom 単語を行末に向かって選択する -->
+       KeyCode::I, ModifierFlag::EXTRA3,
+       KeyCode::A, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
+    </autogen>
   </item>
 
   <item>
