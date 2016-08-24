@@ -12,10 +12,9 @@ alias ll='ls -l'
 alias mo='git fetch && git merge origin/`git rev-parse --abbrev-ref HEAD`'
 alias p='peco'
 alias pong='perl -nle '\''print "display notification \"$_\" with title \"Terminal\""'\'' | osascript'
-alias r='ruby'
+alias rb='ruby'
 alias rs='rustc'
 alias rso='git fetch && git reset --hard origin/`git rev-parse --abbrev-ref HEAD`'
-alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias sl='ls'
 alias t='hub'
 alias ta='tig --all'
@@ -35,6 +34,11 @@ function find-pr-open() {
   local pr="$(fpr $1 $2 | awk '{print substr($5, 2)}')"
   local repo="$(git config --get remote.origin.url | sed 's/git@github.com://' | sed 's/\.git$//')"
   open "https://github.com/${repo}/pull/${pr}"
+}
+
+function r() {
+  hub browse -- commit/$1
+  git checkout $1
 }
 
 # 自分用のコマンド
