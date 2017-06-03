@@ -6,6 +6,7 @@
 	ap = add -p
 	br = branch
 	brd = branch -d
+  brdf = branch -D
   cp = cherry-pick
 	co = checkout
 	cob = checkout -b

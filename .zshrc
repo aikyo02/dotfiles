@@ -1,8 +1,12 @@
+alias arst='asdf'
 alias be='bundle exec'
 alias bi='bundle install'
+alias bu='bundle update'
 alias c='git checkout `git branch | peco | sed -e "s/\* //g" | awk "{print \$1}"`'
 alias cb='git rev-parse --abbrev-ref HEAD | tr -d "\n" | pbcopy'
 alias co='git checkout'
+alias com='git checkout master'
+alias cof='git branch -D "\$1"; git checkout -b "\$1"'
 alias cl='clear'
 alias g='ctags -R -f ./.tags'
 alias h='git lfhas | head'
@@ -16,13 +20,20 @@ alias rb='ruby'
 alias rs='rustc'
 alias rso='git fetch && git reset --hard origin/`git rev-parse --abbrev-ref HEAD`'
 alias sl='ls'
+alias st='git status'
 alias t='hub'
 alias ta='tig --all'
 alias tbr='git browse-remote'
 alias ter='terminal-notifier'
+alias vi="vim"
 
 # pecoでブランチを取得する
 alias -g b='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
+
+# Fetch PR
+function fp() {
+  git fetch origin pull/$1/head:pr$1
+}
 
 # 特定のcommitが含まれるPRを探す find pull request. usage: fpr commit_hash [branch]
 function fpr() {
