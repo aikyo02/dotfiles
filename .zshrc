@@ -135,7 +135,7 @@ RPROMPT='[`rprompt-git-current-branch`%~]'
 export PATH="/usr/local/heroku/bin:$PATH"
 
 
-eval "$(direnv hook bash)"
+eval "$(direnv hook zsh)"
 
 if which pyenv > /dev/null; then
   export PYENV_ROOT="${HOME}/.pyenv"
