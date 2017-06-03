@@ -201,3 +201,7 @@ export PATH="/usr/local/share/npm/bin:$PATH"
 
 # rust_src_path for racer
 export RUST_SRC_PATH="/Users/aikyo/gr/rust/src"
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
