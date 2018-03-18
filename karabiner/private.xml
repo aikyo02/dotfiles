@@ -490,11 +490,6 @@
       KeyCode::C, ModifierFlag::COMMAND_L,
     </autogen>
     <autogen>__KeyToKey__
-      KeyCode::I, ModifierFlag::EXTRA3,
-      KeyCode::P, ModifierFlag::CONTROL_L,
-      KeyCode::P, ModifierFlag::CONTROL_L
-    </autogen>
-    <autogen>__KeyToKey__
       KeyCode::U, ModifierFlag::EXTRA3,
       KeyCode::I, ModifierFlag::CONTROL_L,
       KeyCode::R, ModifierFlag::CONTROL_L
